@@ -61,7 +61,7 @@ const orderTableColumns: TableColumn[] = [
     },
 ];
 
-const mapOrdersToTableData = (orders: Order[], currentPage: number): OrderTable[] => {
+const mapOrdersToTableData = (orders: Order[], currentPage: number = 1): OrderTable[] => {
     return orders?.map((order, index) => ({
         sl: index + 1 + (currentPage - 1) * 10,
         txId: `#${truncateString(order?.txHash)}`,

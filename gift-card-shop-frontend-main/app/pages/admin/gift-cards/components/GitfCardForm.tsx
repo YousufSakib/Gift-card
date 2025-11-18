@@ -143,7 +143,7 @@ export default function GitfCardForm({ apiData, isEdit = false }: Props) {
                             placeholder="Enter price"
                             rules={{
                                 required: 'Price is required',
-                                min: { value: 1, message: 'price cant be 0' },
+                                min: { value: 0.4, message: 'price cant be 0' },
                             }}
                             icon={<span>USDT</span>}
                             type="number"
