@@ -1,0 +1,27 @@
+
+1) **USER Collection**
+   - Represents registered customers.
+   - Uniquely identified by `email`.
+   - Transactions currently do NOT store userId → relation is logical only.
+
+2) **CARD Collection**
+   - Represents available gift cards.
+   - Contains base info + cardCodes (array of strings).
+   - A single CARD record can be used in **multiple transactions**.
+
+3) **TRANSACTION Collection**
+   - Represents each purchase/reservation/payment event.
+   - Stores payment + blockchain network details.
+
+
+
+Relationship Summary
+
+✔ USERS → TRANSACTIONS
+One-to-Many
+One user can have many transactions
+
+✔ CARDS → TRANSACTIONS
+One-to-Many
+One card type can be purchased many times
+Therefore, many transactions reference the same cardId

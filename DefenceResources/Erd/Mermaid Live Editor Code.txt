@@ -1,0 +1,45 @@
+erDiagram
+
+    USERS {
+        ObjectId _id
+        String firstName
+        String lastName
+        String email
+        String avatar
+        String password
+        Date createdAt
+        Date updatedAt
+    }
+
+    CARDS {
+        ObjectId _id
+        String name
+        String description
+        String image
+        Number cardValue
+        Number price
+        Array cardCode
+        Boolean status
+        Date createdAt
+        Date updatedAt
+    }
+
+    TRANSACTIONS {
+        ObjectId _id
+        String txHash
+        String email
+        String walletAddress
+        ObjectId cardId
+        String cardCode
+        Number amountPaid
+        String network
+        String status
+        String paymentUrl
+        String qrCodeText
+        String nowPaymentStatus
+        Date createdAt
+        Date updatedAt
+    }
+
+    USERS ||--o{ TRANSACTIONS : "via email (optional)"
+    CARDS ||--o{ TRANSACTIONS : "purchases"

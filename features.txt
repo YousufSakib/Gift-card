@@ -1,0 +1,18 @@
+Features:
+    Google play, Apple, Amazon, Netflix, xBox, Spotify etc Gift card buying 
+    Easy card navigation.
+    Allows crypto currency only payment.
+    Instant coupon code send to user mail after payment.
+    User input mail validation throw otp.
+
+Admin Panel:
+    Admin can manage gift-card
+    Admin can see sell's and order's history, monthly-weekly overview.
+    Admin login, forget password, opt verification
+
+Payment:
+    Initially two supported networks Tron and Bnb Smart Chain.
+    Pay with network's native token as native tokens's trasaction fee is very low.
+    Mobile wallet connection using walletconnect relay server.
+    Browser Wallet extension supported like Tronlink, Metamask.
+    nowPayment payment gateway integrated.

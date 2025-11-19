@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift Card Platform - Use Case Diagram</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .download-btn {
+        background: #fff;
+        color: #667eea;
+        border: none;
+        padding: 12px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s;
+      }
+
+      .download-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      #diagram-container {
+        background: white;
+        width: 210mm;
+        height: 297mm;
+        padding: 15mm;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        position: relative;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .actor {
+        fill: #4a90e2;
+        stroke: #2e5c8a;
+        stroke-width: 2;
+      }
+
+      .admin-actor {
+        fill: #e74c3c;
+        stroke: #c0392b;
+        stroke-width: 2;
+      }
+
+      .system {
+        fill: #3498db;
+        stroke: #2980b9;
+        stroke-width: 2;
+      }
+
+      .use-case {
+        fill: #2ecc71;
+        stroke: #27ae60;
+        stroke-width: 2;
+      }
+
+      .admin-case {
+        fill: #e67e22;
+        stroke: #d35400;
+        stroke-width: 2;
+      }
+
+      .payment-case {
+        fill: #9b59b6;
+        stroke: #8e44ad;
+        stroke-width: 2;
+      }
+
+      .external {
+        fill: #95a5a6;
+        stroke: #7f8c8d;
+        stroke-width: 2;
+      }
+
+      text {
+        fill: white;
+        font-size: 14px;
+        font-weight: 600;
+        text-anchor: middle;
+      }
+
+      .title-text {
+        font-size: 20px;
+        font-weight: bold;
+        fill: #2c3e50;
+      }
+
+      .section-title {
+        font-size: 16px;
+        font-weight: bold;
+        fill: #34495e;
+      }
+
+      line {
+        stroke: #34495e;
+        stroke-width: 2;
+      }
+
+      .dashed {
+        stroke-dasharray: 5, 5;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="download-btn" onclick="downloadDiagram()">📥 Download Use Case Diagram</button>
+
+    <div id="diagram-container">
+      <svg viewBox="0 0 800 1100" xmlns="http://www.w3.org/2000/svg">
+        <!-- Title -->
+        <text x="400" y="30" class="title-text">Gift Card Platform - Use Case Diagram</text>
+
+        <!-- System Boundary -->
+        <rect
+          x="150"
+          y="60"
+          width="500"
+          height="900"
+          fill="none"
+          stroke="#2C3E50"
+          stroke-width="3"
+          stroke-dasharray="10,5"
+          rx="10"
+        />
+        <text x="400" y="85" class="section-title">System Boundary</text>
+
+        <!-- Customer Actor -->
+        <ellipse cx="80" cy="300" rx="50" ry="70" class="actor" />
+        <text x="80" y="305">Customer</text>
+
+        <!-- Admin Actor -->
+        <ellipse cx="80" cy="700" rx="50" ry="70" class="admin-actor" />
+        <text x="80" y="705">Admin</text>
+
+        <!-- User Use Cases -->
+        <ellipse cx="300" cy="150" rx="80" ry="35" class="use-case" />
+        <text x="300" y="155">Browse Cards</text>
+
+        <ellipse cx="300" cy="230" rx="90" ry="35" class="use-case" />
+        <text x="300" y="235">Input Email & OTP verify</text>
+
+        <ellipse cx="300" cy="310" rx="80" ry="35" class="use-case" />
+        <text x="300" y="315">Connect Wallet</text>
+
+        <ellipse cx="300" cy="390" rx="80" ry="35" class="use-case" />
+        <text x="300" y="395">Make Payment</text>
+
+        <ellipse cx="300" cy="470" rx="90" ry="35" class="use-case" />
+        <text x="300" y="475">Receive Coupon</text>
+
+        <!-- Admin Use Cases -->
+        <ellipse cx="300" cy="600" rx="80" ry="35" class="admin-case" />
+        <text x="300" y="605">Admin Login</text>
+
+        <ellipse cx="300" cy="670" rx="90" ry="35" class="admin-case" />
+        <text x="300" y="675">Manage Cards</text>
+
+        <ellipse cx="300" cy="740" rx="100" ry="35" class="admin-case" />
+        <text x="300" y="745">Sales Dashboard</text>
+
+        <ellipse cx="300" cy="810" rx="90" ry="35" class="admin-case" />
+        <text x="300" y="815">Order History</text>
+
+        <ellipse cx="520" cy="670" rx="110" ry="35" class="admin-case" />
+        <text x="520" y="675">Reset Password</text>
+
+        <!-- Payment Use Cases -->
+        <ellipse cx="520" cy="430" rx="100" ry="35" class="payment-case" />
+        <text x="520" y="435">Crypto Payment</text>
+
+        <ellipse cx="520" cy="500" rx="110" ry="35" class="payment-case" />
+        <text x="520" y="505">Payment Gateway</text>
+
+        <!-- External Systems -->
+        <rect x="680" y="270" width="100" height="50" class="external" rx="5" />
+        <text x="730" y="300">Tron/BNB</text>
+
+        <rect x="680" y="400" width="100" height="50" class="external" rx="5" />
+        <text x="730" y="430">Wallets</text>
+
+        <rect x="680" y="530" width="100" height="50" class="external" rx="5" />
+        <text x="730" y="560">Email</text>
+
+        <rect x="680" y="800" width="100" height="50" class="external" rx="5" />
+        <text x="730" y="830">NowPayment</text>
+
+        <!-- Customer Connections -->
+        <line x1="130" y1="250" x2="220" y2="160" />
+        <line x1="130" y1="270" x2="220" y2="220" />
+        <line x1="130" y1="290" x2="220" y2="290" />
+        <line x1="130" y1="310" x2="220" y2="360" />
+        <line x1="130" y1="330" x2="210" y2="430" />
+        <line x1="130" y1="300" x2="440" y2="290" />
+
+        <!-- Admin Connections -->
+        <line x1="130" y1="680" x2="220" y2="670" />
+        <line x1="130" y1="700" x2="220" y2="740" />
+        <line x1="130" y1="720" x2="220" y2="810" />
+        <line x1="130" y1="660" x2="410" y2="670" />
+
+        <!-- Use Case Relationships -->
+        <line x1="380" y1="290" x2="440" y2="290" class="dashed" />
+        <line x1="390" y1="430" x2="440" y2="430" class="dashed" />
+        <line x1="520" y1="325" x2="520" y2="360" class="dashed" />
+
+        <!-- External System Connections -->
+        <line x1="610" y1="290" x2="680" y2="295" />
+        <line x1="600" y1="430" x2="680" y2="425" />
+        <line x1="520" y1="395" x2="680" y2="555" class="dashed" />
+        <line x1="520" y1="535" x2="680" y2="825" class="dashed" />
+
+        <!-- Legend -->
+        <text x="200" y="950" class="section-title">Legend:</text>
+        <ellipse cx="250" cy="990" rx="40" ry="20" class="use-case" />
+        <text x="320" y="995" style="fill: #2c3e50; text-anchor: start; font-size: 13px">User Features</text>
+
+        <ellipse cx="250" cy="1040" rx="40" ry="20" class="admin-case" />
+        <text x="320" y="1045" style="fill: #2c3e50; text-anchor: start; font-size: 13px">Admin Features</text>
+
+        <ellipse cx="480" cy="990" rx="40" ry="20" class="payment-case" />
+        <text x="550" y="995" style="fill: #2c3e50; text-anchor: start; font-size: 13px">Payment Features</text>
+
+        <rect x="455" y="1020" width="40" height="30" class="external" rx="3" />
+        <text x="510" y="1040" style="fill: #2c3e50; text-anchor: start; font-size: 13px">External Systems</text>
+      </svg>
+    </div>
+
+    <script>
+      function downloadDiagram() {
+        const container = document.getElementById("diagram-container");
+        const svg = container.querySelector("svg");
+        const svgData = new XMLSerializer().serializeToString(svg);
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+        const img = new Image();
+
+        // A4 size at 300 DPI
+        canvas.width = 2480;
+        canvas.height = 3508;
+
+        // White background
+        ctx.fillStyle = "white";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        img.onload = function () {
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+          canvas.toBlob(function (blob) {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "gift-card-use-case-diagram.png";
+            a.click();
+            URL.revokeObjectURL(url);
+          });
+        };
+
+        img.src = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgData)));
+      }
+    </script>
+  </body>
+</html>
