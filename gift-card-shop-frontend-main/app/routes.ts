@@ -1,16 +1,11 @@
-import {
-    type RouteConfig,
-    index,
-    layout,
-    prefix,
-    route,
-} from '@react-router/dev/routes';
+import { type RouteConfig, index, layout, prefix, route } from '@react-router/dev/routes';
 
 export default [
     // default user routes
     layout('./layouts/user-layout/index.tsx', [
         index('./pages/home/index.tsx'),
         route('gift-cards', './pages/giftcards/index.tsx'),
+        route('blogs', './pages/Blogs/index.tsx'),
     ]),
 
     // admin routes

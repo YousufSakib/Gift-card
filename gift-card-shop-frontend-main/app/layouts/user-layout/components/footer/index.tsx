@@ -18,6 +18,7 @@ const currentYear = new Date(Date.now()).getFullYear();
 const quickLinks = [
     { title: 'Home', link: '/' },
     { title: 'Gift cards', link: '/gift-cards' },
+    { title: 'Blogs', link: '/blogs' },
     { title: 'FAQs', link: '#faqs' },
 ];
 

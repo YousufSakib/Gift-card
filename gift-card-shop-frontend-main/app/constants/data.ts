@@ -31,6 +31,7 @@ export const faqList = [
 export const navItems = [
     { label: 'Home', link: '/' },
     { label: 'Gift Cards', link: '/gift-cards' },
+    { label: 'Blogs', link: '/blogs' },
     { label: 'FAQs', link: '#faqs' },
 ];
 
