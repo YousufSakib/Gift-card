@@ -1,8 +1,10 @@
 Introduction:
 
-    slide-1:
+    স্লাইড–১: পরিচিতি
+    সবার শুভেচ্ছা। আজকে আমি আপনাদের পরিচয় করিয়ে দেব আমাদের ডিজিটাল গিফট কার্ড মার্কেটপ্ল্যাটফর্ম সম্পর্কে—যেখানে ব্যবহারকারীরা খুব সহজে বিভিন্ন গিফট কার্ড কিনতে পারবেন।
 
-    slide-2:
+    slide-2: প্ল্যাটফর্মটি কী?
+    এটি একটি আধুনিক ও সম্পূর্ণ ডিজিটাল গিফট কার্ড মার্কেটপ্ল্যাটফর্ম। এখানে কেউ চাইলে Google Play, Apple, Amazon, Netflix, Xbox, Spotify সহ আরও অনেক জনপ্রিয় ব্র্যান্ডের গিফট কার্ড কিনতে পারবেন। সবচেয়ে সুবিধার বিষয় হলো—এখানে পেমেন্ট করা যায় শুধুমাত্র ক্রিপ্টোকারেন্সির মাধ্যমে, যা দ্রুত, নিরাপদ এবং আন্তর্জাতিকভাবে খুবই সহজে ব্যবহারযোগ্য।
 
     slide-3: Motivation for the Project
     “Ei project-er motivation ta asole duita strong reason theke asche. Prothomoto, Bangladesh-e international payment e onek restriction. Amazon, Google Play, gaming platforms — onek somoy card fail kore, OTP ase na, verification lage, ba altogether support kore na. Gift card ekhane ekta easy and instant solution. Globally eta already popular, karon shipping nai, waiting nai, ekta code diye instantly payment complete kora jay. Bangladesh-e ekta reliable, automated gift card platform-er proper ecosystem o nai — ei gap fill korar jonnoi amra ei project ta banacchi.
@@ -15,15 +17,19 @@ Introduction:
     slide-5: Comparison with existing system
     আমাদের প্ল্যাটফর্মটি প্রচলিত গিফট কার্ড ও ডিজিটাল পেমেন্ট সিস্টেমের তুলনায় অনেক বেশি user-friendly এবং efficient। যেখানে অনেক existing system শুধু credit/debit card বা centralized wallets সাপোর্ট করে, আমরা crypto-based payment দিয়ে users কে আরও দ্রুত, কম খরচে এবং secure payment experience দিচ্ছি।
 
+
+Diagrams: (3 slides):
+
+
 payment and wallet
-    স্লাইড–3: পেমেন্ট সিস্টেম – ক্রিপ্টো ইকোসিস্টেম
+    স্লাইড–9: পেমেন্ট সিস্টেম – ক্রিপ্টো ইকোসিস্টেম
     আমাদের প্ল্যাটফর্মের মূল শক্তি হলো ক্রিপ্টো-ভিত্তিক পেমেন্ট সিস্টেম। ব্যবহারকারীরা সহজে, দ্রুত পেমেন্ট করতে পারে—এমন সুবিধা নিশ্চিত করতে আমরা শুরুতে দুটি সবচেয়ে জনপ্রিয় নেটওয়ার্ক সাপোর্ট করছি: Tron (TRX) এবং BNB Smart Chain (BNB)।
 
-    স্লাইড-4: Why do Tron and BNB Chains
+    স্লাইড-10: Why do Tron and BNB Chains
     Tron এবং BNB Chain নির্বাচন করার মূল কারণ হলো—এই দুটি নেটওয়ার্ক বাস্তব ব্যবহারের ক্ষেত্রে সবচেয়ে সুবিধাজনক এবং ব্যবহারকারী-বান্ধব। প্রথমত, এগুলোর ট্রানজাকশন ফি খুবই কম, যা gift card বা ছোট অঙ্কের ডিজিটাল পেমেন্টের ক্ষেত্রে অত্যন্ত গুরুত্বপূর্ণ। ব্যবহারকারীরা অতিরিক্ত খরচের চাপ ছাড়াই সহজে পেমেন্ট করতে পারে। দ্বিতীয়ত, Tron ও BNB Chain উভয়ই খুব দ্রুত ট্রানজাকশন কনফার্ম করে, ফলে পুরো পেমেন্ট প্রক্রিয়াটি smooth এবং frictionless হয়। সবচেয়ে বড় বিষয় হলো—দুটি নেটওয়ার্কই বিশ্বব্যাপী অনেক বেশি ব্যবহৃত। পাশাপাশি এই নেটওয়ার্কগুলোর ecosystem পরিপক্ব এবং স্থিতিশীল—wallet support, developer tools, explorer, সবকিছুই প্রস্তুত ও নির্ভরযোগ্য। এই সবকিছু মিলিয়ে Tron এবং BNB Chain ডিজিটাল পণ্য ও gift card পেমেন্টের জন্য সবচেয়ে practical এবং user-friendly networks।
 
 
-    স্লাইড–5:
+    স্লাইড–11: Desktop Browser ওয়ালেট সাপোর্ট
 
     আমাদের সিস্টেমে ডেস্কটপ ব্যবহারকারীদের জন্য দুটি জনপ্রিয় এবং widely-used ব্রাউজার ওয়ালেট সাপোর্ট রাখা হয়েছে—
 
@@ -46,7 +52,7 @@ payment and wallet
 
 
 
-    লাইড–6: WalletConnect ব্যবহার করে সহজেই মোবাইল ওয়ালেট কানেক্ট করা যায়
+    লাইড–12:  Mobile wallet connection using WalletConnect
 
     WalletConnect একটি open-source communication protocol, যা QR কোড বা deep link ব্যবহার করে ডেস্কটপ dApp এবং মোবাইল ওয়ালেটের মধ্যে encrypted session তৈরি করে।
 
@@ -59,3 +65,33 @@ payment and wallet
     WalletConnect wallet-agnostic, অর্থাৎ Metamask, TrustWallet, Coinbase Wallet, Rainbow Wallet সহ যেকোনো compatible ওয়ালেট সহজেই কানেক্ট করা যায়।
 
     dApp এর transaction request accept/deny পুরোপুরি user-controlled।
+    
+
+UI Webpage
+    Home page:
+
+    Blogs Page:
+
+    Cards page:
+
+    Card details Modal:
+
+    Wallet Select Modal:
+
+    Mobile Wallet Connection QrCode:
+
+    Payment Successfull Modal:
+
+
+UI Admin Panel:
+
+    Login Modal:
+
+    Otp verify Modal:
+
+    System Insight page:
+
+    All Card's page:
+
+    Add New Card page:
+
