@@ -40,11 +40,17 @@ Introduction:  (5 slides)
     
 Diagrams: (3 slides)
 
+    স্লাইড–06: Use Case Diagrams
+
+    স্লাইড–07: ERD Diagrams
+
+    স্লাইড–08: DFD Diagram
+
 
 
 Payment and wallet (5 slides)
 
-    স্লাইড–3: পেমেন্ট সিস্টেম – ক্রিপ্টো ইকোসিস্টেম
+    স্লাইড–9: পেমেন্ট সিস্টেম – ক্রিপ্টো ইকোসিস্টেম
     আমাদের প্ল্যাটফর্মে ক্রিপ্টো দিয়ে পেমেন্ট করাটাই মূল ফিচার।
     শুরুতে আমরা দুইটি জনপ্রিয় নেটওয়ার্ক সাপোর্ট করছি—
 
@@ -52,7 +58,7 @@ Payment and wallet (5 slides)
         -> BNB Smart Chain (BNB)
 
 
-    slide-4 : Why Tron and BNB Chains
+    slide-10: Why Tron and BNB Chains
     Low Fees: দুই নেটওয়ার্কেই ট্রানজাকশন ফি খুব কম।
     High Speed: দ্রুত কনফার্মেশন এবং smooth user experience।
     Wide Adoption: Tron ও BNB—দুটিই globally জনপ্রিয় এবং widely supported।
@@ -61,12 +67,12 @@ Payment and wallet (5 slides)
     এই দুই নেটওয়ার্কে ট্রান্সাকশন ফি খুবই কম, ফলে ব্যবহারকারীরা কম খরচে পেমেন্ট করতে পারবেন।
 
 
-    স্লাইড–5: Desktop Browser ওয়ালেট সাপোর্ট
+    স্লাইড–11: Desktop Browser ওয়ালেট সাপোর্ট
     TronLink wallet এক্সটেনশন ( Tron network জন্য )
     MetaMask wallet এক্সটেনশন ( Bnb Smart Chain জন্য )
 
 
-    স্লাইড–৬: Mobile wallet connection using WalletConnect
+    স্লাইড–12: Mobile wallet connection using WalletConnect
 
     QR কোড বা deep link ব্যবহার করে dApp ও মোবাইল ওয়ালেটের মধ্যে encrypted session তৈরি করে।
     JSON-RPC এর মাধ্যমে transaction/signature request নিরাপদভাবে পাঠায়।
@@ -78,52 +84,32 @@ Payment and wallet (5 slides)
     আমরা NowPayments ইন্টিগ্রেট করেছি, যাতে ইউজাররা আরও মসৃণ ও নিরাপদ আন্তর্জাতিক ক্রিপ্টো পেমেন্ট করতে পারেন। এটি স্বয়ংক্রিয়ভাবে পেমেন্ট প্রসেস করে, ফলে ভুল বা ব্যর্থ লেনদেনের সম্ভাবনা কম।
 
 
+UI Webpage
+    স্লাইড–13 Home page:
 
-UI:
+    স্লাইড–14 Blogs Page:
 
-স্লাইড–08: ইউজার সুবিধা – গিফট কার্ড সিস্টেম
+    স্লাইড–15 Cards page:
 
-ব্যবহারকারীরা খুব সহজেই গিফট কার্ড বাছাই করতে পারেন, 
-সহজ Product page a navigation korte paren
-গিফট কার্ডের বিভিন্ন দাম দেখানো থাকে
-প্রতিটি কার্ডের বিস্তারিত তথ্য উল্লেখ থাকে
+    স্লাইড–16 Card details Modal:
 
+    স্লাইড–17 Wallet Select Modal:
 
-স্লাইড–09: ইমেইল ভেরিফিকেশন < A screanshot will be added >
-পেমেন্ট সম্পন্ন হওয়ার পর ব্যবহারকারীর ইমেইলে গিফট কার্ড কোড পাঠানো হয়। এজন্য আমরা ইমেইল ভেরিফিকেশন সিস্টেম ব্যবহার করছি—
+    স্লাইড–18 Mobile Wallet Connection QrCode:
 
-ব্যবহারকারী ইমেইল দিলে তার ইনবক্সে একটি OTP পাঠানো হয়
+    স্লাইড–19 Payment Successfull Modal:
 
-OTP যাচাই করে ইমেইলটি নিশ্চিত করা হয়
-এভাবে ভুল ইমেইলে কোড পাঠানোর ঝুঁকি সম্পূর্ণভাবে দূর করা যায়।
+UI Admin Panel:
 
-স্লাইড–10: ইনস্ট্যান্ট ডেলিভারি < A screanshot will be added >
-এই প্ল্যাটফর্মের সবচেয়ে বড় সুবিধাগুলোর একটি হলো—
-পেমেন্ট সফল হওয়ার সঙ্গে সঙ্গেই গিফট কার্ড কুপন কোড ব্যবহারকারীর ইমেইলে পাঠানো হয়।
-অনেক ক্ষেত্রে ওয়েবসাইটেও তাৎক্ষণিকভাবে কোডটি দেখানো হয়।
-ব্যবহারকারীর জন্য এটি অত্যন্ত দ্রুত ও সময় সাশ্রয়ী।
+    স্লাইড–20 Login Modal:
 
-স্লাইড–11: অ্যাডমিন প্যানেল < Multiple screenshot will be added > 
-আমাদের অ্যাডমিন প্যানেলটি সহজভাবে ব্যবহারের উপযোগী। অ্যাডমিন যা যা করতে পারেন:
+    স্লাইড–21 Otp verify Modal:
 
-গিফট কার্ড যোগ করা, সম্পাদনা করা এবং মুছে ফেলা
+    স্লাইড–22 System Insight page:
 
-কার্ডের bistarito tottho, ভ্যালু ও দাম নিয়ন্ত্রণ
+    স্লাইড–23 All Card's page:
 
-অর্ডার ও বিক্রির বিস্তারিত ইতিহাস দেখা
-
-সাপ্তাহিক ও মাসিক সেলস অ্যানালিটিক্স
-
-স্লাইড–১০: অ্যাডমিন সিকিউরিটি <screen shot>
-অ্যাডমিন লগইন ব্যবস্থায় রয়েছে—
-
-নিরাপদ লগইন সিস্টেম
-
-পাসওয়ার্ড ভুলে গেলে রিকভারি
-
-ইমেইল OTP ভেরিফিকেশনের মাধ্যমে অ্যাকাউন্ট সিকিউরিং
-এটি পুরো প্ল্যাটফর্মকে নিরাপদ রাখে এবং অননুমোদিত প্রবেশ প্রতিরোধ করে।
-
+    স্লাইড–24 Add New Card page:
 
 
 
