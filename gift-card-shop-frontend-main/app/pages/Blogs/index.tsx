@@ -24,7 +24,7 @@ const blogPosts: BlogPost[] = [
             'What advantages do you get when buying gift cards using cryptocurrency compared to traditional payment methods? Learn more about the benefits.',
         image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=500&fit=crop',
         date: 'November 22, 2025',
-        author: 'KingsCard Team',
+        author: 'Giftcard Team',
         readTime: '6 min read',
         content: `
 # 7 Benefits of Buying Gift Cards with Crypto
@@ -181,7 +181,7 @@ Start your crypto journey today and easily buy gift cards from KingsCard!
             'A detailed guide on how to use your gift card codes on various platforms including Netflix, Google Play, Amazon, and Spotify.',
         image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&h=500&fit=crop',
         date: 'November 21, 2025',
-        author: 'KingsCard Team',
+        author: 'Giftcard Team',
         readTime: '7 min read',
         content: `
 # How to Redeem Gift Card Codes - Complete Guide
@@ -323,7 +323,7 @@ Hope this guide helps you redeem your gift cards. If you have any other problems
             "Many users may not know how to create a crypto wallet. That's why our platform provides easy guidelines for beginners.",
         image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=500&fit=crop',
         date: 'November 20, 2025',
-        author: 'KingsCard Team',
+        author: 'Giftcard Team',
         readTime: '5 min read',
         content: `
 # How to Create a Crypto Wallet Easily
@@ -365,7 +365,7 @@ After this, users can easily connect with WalletConnect, TronLink, or MetaMask w
             'The process of depositing crypto to a wallet can be divided into three steps— sending money to exchange, buying crypto, and sending to wallet.',
         image: 'https://images.unsplash.com/photo-1621416894569-0f39ed31d247?w=800&h=500&fit=crop',
         date: 'November 18, 2025',
-        author: 'KingsCard Team',
+        author: 'Giftcard Team',
         readTime: '8 min read',
         content: `
 # How to Deposit Crypto to Your Wallet

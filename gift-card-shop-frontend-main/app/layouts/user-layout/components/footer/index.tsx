@@ -59,7 +59,7 @@ export default function Footer() {
                         <div className="max-w-[420px] flex flex-col gap-8">
                             <div className="flex flex-col gap-5">
                                 <Link to="/">
-                                    <img src={Logo} className="object-contain" />
+                                    {/* <img src={Logo} className="object-contain" /> */}
                                 </Link>
 
                                 <p className="p-sm lg:p-lg">
