@@ -1,0 +1,111 @@
+Abstract
+Declaration
+Acknowledgements
+Table of Contents
+List of Figures
+List of Tables
+
+1. Introduction
+    1.1 History of Early E-learning Systems
+    1.2 Modern E-learning Systems
+    1.3 Motivation
+    1.4 Project Overview
+            1.4.1 Project objectives
+            1.4.2 Aim of the project
+            1.4.3 Project Description
+            1.4.4 Features of the project
+            1.4.5 Scope of Project
+            1.4.6 Project Scheduling
+    1.5 Chapter Summary
+
+
+2. Literature Review
+    2.1 Background Study
+        2.1.1 Existing E-learning Systems
+    2.2 Drawbacks of current E-learning systems
+    2.3 EduLab
+    2.4 Chapter Summary
+
+3. Requirement Analysis
+    3.1 User Requirements
+    3.2 Device Requirements
+    3.3 Hardware Requirements
+    3.4 Software Requirements
+    3.5 Functional Requirements
+    3.6 Nonfunctional Requirements
+    3.7 Summary
+
+4. Technical Overview
+    4.1 Tools
+        4.1.1 HTML
+        4.1.2 CSS
+        4.1.3 Bootstrap
+        4.1.4 MySQL
+        4.1.5 PHP
+        4.1.6 Visual Studio Code
+        4.1.7 Javascript
+    4.2 Chapter Summary
+
+5. Design & Implementation
+    5.1 The need for System Analysis & Design
+    5.2 System Development Life Cycle
+    5.3 System Development Life Cycle Models
+    5.4 Project Methodology
+        5.4.1 Phases of Agile Methodology
+        5.4.2 Advantages of Agile Methodology
+        5.4.3 Disadvantages of Agile Methodology
+        5.4.4 Traditional vs Agile Methodology
+    5.5 Use Case Diagram
+    5.6 Data Flow Diagram (DFD)
+        5.6.1 DFD for Administrator
+        5.6.2 DFD for Teacher
+        5.6.3 DFD for Student
+        5.6.4 DFD for E-learning System
+    5.7 Activity Diagram
+        5.7.1 Activity diagrams for EduLab
+        5.7.2 Activity diagram for registration of Teacher/Student
+        5.7.3 Activity diagram for login of Admin
+        5.7.4 Activity diagram for creating class by Teacher
+        5.7.5 Activity diagram for posting announcements by Teacher
+        5.7.6 Activity diagram for scheduling assignment by Teacher
+        5.7.7 Activity diagram for joining class by Student
+        5.7.8 Activity diagram for assignment submission by Student
+        5.7.9 Activity diagram for discussion panel by Student
+    5.8 Entity Relationship Diagram (E-R diagram)
+        5.8.1 E-R diagram for EduLab
+    5.9 Data Dictionary
+        5.9.1 Designing teacher data dictionary
+        5.9.2 Designing student data dictionary
+        5.9.3 Designing course data dictionary
+        5.9.4 Designing posts data dictionary
+        5.9.5 Designing Lecture_upload data dictionary
+        5.9.6 Designing assignment data dictionary
+        5.9.7 Designing assignment_submissions data dictionary
+        5.9.8 Designing discussion_panel data dictionary
+        5.9.9 Designing student_course data dictionary
+        5.9.10 Designing quiz data dictionary
+
+
+6. User Interface
+    6.1 Homepage
+    6.2 Teacher Registration
+    6.3 Student Registration
+    6.4 Teacher Login
+    6.5 Student Login
+    6.6 Admin Login
+    6.7 Teacher homepage
+
+7. Challenges and Difficulties
+    7.1 Defining our goals
+    7.2 Choosing the right tech stack
+    7.3 User Experience
+    7.4 User Interface and simplistic design
+    7.5 Navigability
+    7.6 Chapter Summary
+
+8. Conclusion and future scope
+    8.1 Benefits of our project
+    8.2 Limitations
+    8.3 Future Work
+
+9. References
