@@ -26,17 +26,6 @@ Introduction:  (5 slides)
     Scalable Architecture — ভবিষ্যতে আরও নেটওয়ার্ক/ওয়ালেট অ্যাড করা সহজ।
 
 
-
-    স্লাইড–5: Comparison with existing system
-
-    Crypto Payments: দ্রুত, কম ফি এবং secure, যেখানে অনেক existing system কেবল কার্ড বা centralized wallet সাপোর্ট করে।
-    Instant Delivery: পেমেন্ট কনফার্ম হওয়ার সাথে সাথেই কোড ডেলিভারি।
-    Multi-Wallet Support: MetaMask, TronLink সহ বিভিন্ন ওয়ালেট সহজে কানেক্ট করা যায়।
-    Secure & Reliable: এনক্রিপ্টেড কোড হ্যান্ডলিং ও automated verification।
-    Better UX: দ্রুত checkout এবং ঝামেলামুক্ত payment experience।
-
-
-
     
 Diagrams: (3 slides)
 
