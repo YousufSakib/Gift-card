@@ -231,6 +231,15 @@ export default function BuyCardForm({ data, onClose, setSuccess }: Props) {
     };
 
     const onSubmit = async (form: FormData) => {
+        console.log('=== Transaction Debug Info ===');
+        console.log('Payment Method:', paymentMethod);
+        console.log('Connected Address:', address);
+        console.log('Current Chain ID:', chainId);
+        console.log('Expected Chain ID:', envConfig.BSC.CHAIN_ID);
+        console.log('Is BSC:', isBSC);
+        console.log('Balance Data:', balanceData);
+        console.log('============================');
+
         const activeAddress = isBSC ? address : tronAddress;
 
         if (!activeAddress || (!isBSC && !isTRON)) {

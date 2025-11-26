@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 dotenv.config();
-
+console.log("smtp password:", process.env.SMTP_PASSWORD);
 export default {
   port: process.env.PORT || 4000,
   origin: process.env.ORIGIN?.split(",") || ["http://localhost:5173"],
@@ -15,5 +15,4 @@ export default {
   secret: process.env.SECRET,
   NOW_PAYMENTS_API_KEY: process.env.NOW_PAYMENTS_API_KEY,
   BACKEND_DOMAIN: process.env.BACKEND_DOMAIN,
-
 };

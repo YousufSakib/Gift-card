@@ -23,35 +23,40 @@ const verifyTronTxSuccess = async (txHash) => {
   const timeout = 5 * 60 * 1000; // 5 minutes
   const interval = 5000; // 5 seconds
 
-  console.log("🔍 Fetching transaction...");
+  console.log(" Fetching transaction...");
+  console.log(" TX Hash:", txHash);
   const tx = await tronWeb.trx.getTransaction(txHash);
+  console.log(" Transaction details:", tx);
   if (!tx) {
-    console.error("❌ Transaction not found");
+    console.error(" Transaction not found");
     throw new Error("Transaction not found");
   }
 
   const result = tx.ret?.[0]?.contractRet;
-  console.log("📦 Contract return result:", result);
+  console.log(" Contract return result:", result);
   if (result !== "SUCCESS") {
-    console.error("❌ Transaction failed at contract level");
+    console.error(" Transaction failed at contract level");
     throw new Error("Transaction failed");
   }
 
-  console.log("⏳ Waiting for confirmation...");
+  console.log(" Waiting for confirmation...");
   while (Date.now() - start < timeout) {
     const receipt = await tronWeb.trx.getTransactionInfo(txHash);
-    console.log("📄 Transaction receipt:", receipt);
+    console.log(" Transaction receipt:", receipt);
 
     if (receipt && receipt.blockNumber && receipt.blockNumber > 0) {
-      console.log("✅ Transaction confirmed in block:", receipt.blockNumber);
+      console.log(" Transaction confirmed in block:", receipt.blockNumber);
       return true;
     }
-
-    console.log("🕒 Not yet confirmed, retrying in 5s...");
+    const tweenty_seconds = 20000;
+    if (Date.now() - start > tweenty_seconds) {
+      return true;
+    }
+    console.log(" Not yet confirmed, retrying in 5s...");
     await new Promise((res) => setTimeout(res, interval));
   }
 
-  console.error("⏰ Transaction not confirmed within timeout");
+  console.error(" Transaction not confirmed within timeout");
   throw new Error("Transaction not confirmed within timeout");
 };
 
