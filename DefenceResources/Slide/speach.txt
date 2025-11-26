@@ -1,13 +1,13 @@
 Introduction
-    slide-1: Assalamualaikum and good-morning. Today I will present my work on a digital gift-card buying system.
+    slide-1: Assalamualaikum and good-morning. Today I will present my work about a digital gift-card buying system.
 
     slide-2: 
         This is a Digital gift card system. User Can buy here Google-play gift cards, Apple card, Amazon gift-card, Netflix subscription gift card, Spotify subscription gift card. This system is only support crypto payment getway.
 
     slide-3 Motivation:
-        First, in Bangladesh there are a lot of restrictions on international payments. On Amazon, Google Play, or gaming platforms—cards fail, OTP doesn’t arrive, verification is required, or sometimes the platform simply doesn’t support our cards. In this situation, gift cards are an easy and instant solution. They’re already very popular globally, and with just a code, the payment is completed immediately—no waiting at all.
+        First, in Bangladesh there are a lot of restrictions on international payments. On Amazon, Google Play, cards fail, OTP doesn’t arrive, verification is required, or sometimes the platform simply doesn’t support our cards. In this situation, gift cards are an easy and instant solution. They’re already very popular globally, and with just a code, the payment is completed immediately—no waiting at all.
 
-        Second, our system supports only crypto payments. The reason is simple: crypto payments are fast and borderless. If a user uses crypto, they can buy a gift card instantly—without any bank or intermediary in the middle. Also, many young users are already familiar with the crypto ecosystem, so it becomes naturally accessible. With crypto integration, our system allow users to purchase products smoothly without traditional banking barriers.
+        Second, this system supports only crypto payments. The reason is simple: crypto payments are fast and borderless. If a user uses crypto, they can buy a gift card instantly—without any bank or intermediary in the middle. Also, many young users are already familiar with the crypto ecosystem, so it becomes naturally accessible. With crypto integration, our system allow users to purchase products smoothly without traditional banking barriers.
 
 
     slide-4: Features
@@ -17,7 +17,48 @@ Introduction
 
         Delivery is instant. The moment the payment is confirmed, the gift card code is sent directly to the user’s email.
 
-        There can be multiple admins as well. Admins can log in, view all orders, manage the cards, and handle other important tasks.
+        There can be multiple admins as well. Admins must log-in to view orders-history, manage the cards, and handle other important tasks.
     
 Diagrams:
-    
+    Use Case:
+        Here is the use case diagram for the system. There are four actors. They are User, Admin, and external actors like coingecko and RPC provider. The circles are meant for use cases. Here, the actor 'User' can access cards. If he wants, can view card details, but not mandatory. So the use case 'view card details' has extended line with the 'access cards'. And there are other use cases like 'checkout'. this useCase case is dependend on some other use cases like 'place order', 'connect wallet', 'usdt-to native price conversion', 'verify TX hash' etc. the conversion is happen with the help of Coingecko's api service. The Tx verification is happen by the data fetched with the help of RPC provider.
+
+        Then Admin must have login to access admin panel. He can view order history, manage cards and own account.
+
+    ERD diagram: 
+        Here is the ERD diagram for the system. There are three Collections. They are Users Collection, Card Collection and Transactions Collection. The 'Users' collection represents registered users, and each user is uniquely indentified by email. Collection represents available gift cards, contains base info and coupon codes. The transaction collection represents each purchase, reservation or payment event and stores payment and blockchain network details.
+
+        User and Transaction has one-to-many relationship. One user can have multiple transactions. Similarly Card and Transaction has one-to-many relationship. One card type can be purchased many times. Therefore, many transaction reference the same card id.
+
+        The system uses NoSQL database. And the collections are defined using Mongoose, a popular ODM of MongoDB database.
+
+    DFD diagram:
+        A DFD, or data flow diagram, is a visual representation of how data moves through a system. 
+        
+        Level 0: This Shows the entire system as a single process with its external entities, like User, Crypto payment network, Admin, Email System.
+
+        Level 1: This is Level-1 diagram. It decomposes the single process from Level 0 into its main sub-processes like 'Order management', 'Crypto payment processing' ... etc.
+
+        Level 2: This is the Level-2 diagram of a single process called 'card management' which is a process of Level-1 DFD. As it can be further decomposed into more sub-processes for more details, thus it has picked for the level-2 diagram.
+
+Payments:
+    Payment System – Crypto Ecosystem:
+        Crypto payments are the unique feature of our system.
+        Initially we support two widely used networks: Tron (TRX) and BNB Smart Chain (BSC)
+
+    Why do Tron and BNB Chains:
+        The main reason for choosing Tron and BNB Chain is that these two networks are the most practical and user-friendly in this case.
+        First, their transaction fees are very low, which is extremely important for gift cards or small digital payments.
+        Second, both networks are widely used around the world. Their ecosystems are mature and stable — wallet support, developer tools, explorers — everything is already well-developed and reliable.
+
+    Desktop Browser Wallet Support:
+        In our system, we support two popular and widely used browser wallets for desktop users — the TronLink wallet extension and the MetaMask wallet extension.
+
+    Mobile Wallet Connection:
+        For mobile wallet connection, the user can simply scan a QR code to connect. They can use mobile wallets like MetaMask or Trust Wallet, and the connection happens instantly.
+
+UI:
+    Here is the system's home page, next Card's Listing page. This is blog indexing page, This is a blog post page.
+
+Future Work:
+    For the future work, I have plan to implementing filtering and searching feature. Secondly, reducing payment processing time. Currently for the payment confirmation it takes approximately 20 to 25 seconds. Thirdly supports more blockchain ecosystem like solana, polygon etc. And lastly allowing stable coins like UDST, USDC and other popular ERC-20 tokens for payments.

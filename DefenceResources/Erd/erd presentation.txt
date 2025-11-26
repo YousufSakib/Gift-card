@@ -1,8 +1,7 @@
 
 1) **USER Collection**
-   - Represents registered customers.
+   - Represents registered users.
    - Uniquely identified by `email`.
-   - Transactions currently do NOT store userId → relation is logical only.
 
 2) **CARD Collection**
    - Represents available gift cards.
